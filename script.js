@@ -1,18 +1,18 @@
-let box = document.querySelectorAll("input[type=radio]");
-let form = document.querySelector("form");
-let submitBtn = document.querySelector(".btn");
-let notification = document.querySelector("#popup");
-let firstName = document.querySelector("#firstname");
-let email = document.querySelector("#email");
-let lastname = document.querySelector("#lastname");
-let msgArea = document.querySelector(".msg-area");
-let allInputs = document.querySelectorAll("input[type=text], textarea, input[type=radio]");
-let error = document.querySelectorAll(".error-msg");
-let errorTextarea = document.querySelector(".text-area-error");
-let queryError = document.querySelector(".query-error");
-let radios = document.querySelectorAll("input[name=query]");
-let checkbox = document.querySelector("#term");
-let main = document.querySelector(".main");
+const box = document.querySelectorAll("input[type=radio]");
+const form = document.querySelector("form");
+const submitBtn = document.querySelector(".btn");
+const notification = document.querySelector("#popup");
+const firstName = document.querySelector("#firstname");
+const email = document.querySelector("#email");
+const lastname = document.querySelector("#lastname");
+const msgArea = document.querySelector(".msg-area");
+const allInputs = document.querySelectorAll("input[type=text], textarea, input[type=radio]");
+const error = document.querySelectorAll(".error-msg");
+const errorTextarea = document.querySelector(".text-area-error");
+const queryError = document.querySelector(".query-error");
+const radios = document.querySelectorAll("input[name=query]");
+const checkbox = document.querySelector("#term");
+const main = document.querySelector(".main");
 
 // Intersection Observer for animation
 let observer = new IntersectionObserver(entries => {
@@ -117,3 +117,4 @@ box.forEach(eachbox => {
         });
     });
 });
+
