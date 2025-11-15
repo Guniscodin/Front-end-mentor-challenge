@@ -12,13 +12,6 @@ const errorTextarea = document.querySelector(".text-area-error");
 const queryError = document.querySelector(".query-error");
 const radios = document.querySelectorAll("input[name=query]");
 const checkbox = document.querySelector("#term");
-const main = document.querySelector(".main");
-
-// Intersection Observer for animation
-let observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => entry.target.classList.add("visiable"));
-}, { threshold: 0 });
-observer.observe(main);
 
 // Radio validation
 function validateradio() {
@@ -117,4 +110,5 @@ box.forEach(eachbox => {
         });
     });
 });
+
 
