@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+  <div id="popup" class="hide">
+    <div class="pop-up-div">
+      <div class="pop-up-msg">
+        <img src="assets/images/icon-success-check.svg" alt="Done">
+        <p>Message Sent!</p>
+      </div>
+      <p>Thanks for completing the form We'll be in touch soon!</p>
+    </div>
+  </div>
+
+  <main class="main">
+    <div class="heading">
+      <h1 class="head">Contact Us</h1>
+    </div>
+    <div class="content">
+      <form>
+        <div class="name-inputs">
+          <div class="each-input">
+            <label for="firstname">First Name <span class="dot">*</span></label>
+            <input id="firstname" class="input-name" type="text">
+            <p class="hide-error error-msg" data-for="firstname">This field is required</p>
+          </div>
+          <div class="each-input">
+            <label for="lastname">Last Name <span class="dot">*</span></label>
+            <input id="lastname" class="input-name" type="text">
+            <p class="hide-error error-msg" data-for="lastname">This field is required</p>
+          </div>
+        </div>
+
+        <div class="email-input">
+          <div class="email-input-div">
+            <label for="email">Email Address <span class="dot">*</span></label>
+            <input id="email" type="text" class="input-email">
+            <p class="hide-error error-msg" data-for="email">Please enter a valid email address</p>
+          </div>
+        </div>
+
+        <div class="query">
+          <label>Query Type <span class="dot">*</span></label>
+          <div class="query-setup">
+            <div class="query-div">
+              <input name="query" id="General" class="radios" type="radio">
+              <p>General Equiry</p>
+            </div>
+            <div class="query-div">
+              <input name="query" id="Request" class="radios" type="radio">
+              <p>Support Request</p>
+            </div>
+          </div>
+          <p class="hide-error error-msg query-error" data-for="General">Please select a query type</p>
+        </div>
+
+        <div class="msg">
+          <label for="texta">Message <span class="dot">*</span></label>
+          <div class="text-area-div">
+            <textarea class="msg-area" id="texta"></textarea>
+            <p class="hide-error error-msg text-area-error" data-for="texta">This field is required</p>
+          </div>
+        </div>
+
+        <div class="terms">
+          <div class="terms-div">
+            <input id="term" class="radios" type="checkbox">
+            <label class="term-para" for="term">I consent to being contacted by the term <span class="dot">*</span></label>
+          </div>
+          <p class="error-msg hide-error term-error" data-for="term">To submit this form, please consent to being contacted</p>
+        </div>
+
+        <div class="submit-btn">
+          <button class="btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Guniscoding</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

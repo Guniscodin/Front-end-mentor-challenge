@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100dvh;
+    padding: 20px;
+    width: 100%;
+    background-color: hsl(148, 38%, 91%);
+}
+.pop-up{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    transition: 1s ease;
+    position: absolute;
+    top: 20px;
+}
+.hide{
+    display: none;
+}
+.pop-up-div{
+    min-height: 100px;
+    width: 30%;
+    background-color: hsl(187, 24%, 22%);
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+.pop-up-msg{
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* main */
+.main{
+    width: auto;
+    height: auto;
+    min-height: 300px;
+    min-width: 40%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s ease;
+}
+.visiable{
+    opacity: 1;
+    transition: 1s ease;
+    transform: translateY(0);
+}
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+}
+.name-inputs{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+}
+.each-input{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+.input-name{
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid hsl(186, 15%, 59%);
+}
+input{
+    transition: 0.3s ease;
+}
+input:focus{
+    outline: 1px solid hsl(169, 82%, 27%);
+}
+input:hover{
+    outline: 1px solid hsl(169, 82%, 27%);
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.email-input{
+    width: 100%;
+    margin-top: 20px;
+}
+.email-input-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.email-label{
+    align-self: flex-start;
+}
+.input-email{
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid hsl(186, 15%, 59%);
+}
+.query{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.query-setup{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+.query-div{
+    display: flex;
+    align-items: center;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 10px;
+    width: 50%;
+    height: 40px;
+    padding: 20px;
+    gap: 10px;
+}
+.radios{
+    accent-color: hsl(169, 82%, 27%);
+    cursor: pointer;
+}
+.radios:focus{
+    outline: none;
+}
+.radios:hover{
+    outline: none;
+}
+.msg{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+    width: 100%;
+}
+.text-area-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.msg-area{
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.msg-area:focus{
+    outline: 1px solid hsl(169, 82%, 27%);
+}
+.terms{
+    width: 100%;
+    margin-top: 20px;
+}
+.terms-div{
+    display: flex;
+    gap: 10px;
+}
+.term-error{
+    margin-top: 10px;
+}
+.submit-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btn{
+    width: 90%;
+    padding: 12px;
+    background-color: hsl(169, 82%, 27%);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: hsl(169, 86%, 17%);
+}
+.term-para{
+    cursor: pointer;
+}
+.dot{
+    color: hsl(169, 82%, 27%);
+}
+.forredline{
+    border: 1px solid red;
+}
+.show-error{
+    opacity: 1;
+    color: hsl(0, 66%, 54%);
+}
+.hide-error{
+    opacity: 0;
+}
+@media (max-width: 800px) {
+    .name-inputs{
+        flex-direction: column;
+        gap: 0;
+    }
+    .each-input{
+        width: 100%;
+    }
+    .query-setup{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .query-div{
+        width: 100%;
+    }
+    .text-area-div{
+        min-width: none;
+    }
+    #texta{
+        min-height: 200px;
+    }
+}
