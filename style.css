@@ -49,14 +49,6 @@ body{
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     padding: 20px;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: 1s ease;
-}
-.visiable{
-    opacity: 1;
-    transition: 1s ease;
-    transform: translateY(0);
 }
 .content{
     display: flex;
@@ -245,4 +237,5 @@ form{
     #texta{
         min-height: 200px;
     }
+
 }
